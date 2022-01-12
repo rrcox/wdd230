@@ -27,7 +27,7 @@ img {
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.5em;
-  color: white;
+  color: black;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -49,11 +49,11 @@ footer {
 
 #copyright {
   font-size: 1.1em;
-  color: white;
+  color: black;
 }
 
 #updated {
   font-size: 0.8em;
   padding-top: 5px;
-  color: yellow;
+  color: darkblue;
 }
