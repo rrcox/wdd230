@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"); */
 
 body {
   font-family: Roboto, sans-serif;
@@ -10,9 +9,9 @@ body {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  display: block;
+  /* grid-template-columns: 1fr 1fr; */
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -26,10 +25,11 @@ img {
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 2.5em;
+  font-size: 2em;
   color: black;
   margin-left: 5px;
   margin-right: 5px;
+  padding-bottom: 20px;
 }
 
 h2 {
