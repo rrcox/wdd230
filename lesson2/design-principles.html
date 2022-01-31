@@ -15,34 +15,96 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
     />
-    <link rel="stylesheet" href="lesson2/css/small.css" />
-    <link rel="stylesheet" href="lesson2/css/medium.css" />
-    <link rel="stylesheet" href="lesson2/css/large.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header>
       <h1>Design Principles Document</h1>
+      <h2>Robert R. Cox</h2>
     </header>
-
-    <!-- Subheader -->
-    <h2>Robert R. Cox</h2>
 
     <!-- Main -->
     <main>
-      <div class="card">
-        <div>Hick's Law</div>
-        <img src="images/google-screenshot.png" alt="Google Home Page" />
-      </div>
+      <!-- Card 1 -->
+      <section class="card-1">
+        <div class="card-header">
+          <h3 class>Hick's Law</h3>
+        </div>
+        <div class="card-content">
+          <div class="company">Google</div>
+          <div class="link">
+            <a href="https://www.google.com">https://www.google.com</a>
+          </div>
+          <div class="image">
+            <img src="images/google-screenshot.png" alt="Google Home Page" />
+          </div>
+          <p class="note">
+            Google's home page is the classic example of website making it easy
+            for the user to do one thing - search. The number of stimuli is very
+            small and therefore decision-making and getting results is very
+            straightforward. There are virtually no significant options on the
+            page but to enter text in the search box.
+          </p>
+        </div>
+      </section>
+
+      <!-- Card 2 -->
+      <section class="card-2">
+        <div class="card-header">
+          <h3>White Space and Clean Design</h3>
+        </div>
+        <div class="card-content">
+          <div class="company">Apple</div>
+          <div class="link">
+            <a href="https://www.apple.com">https://www.apple.com</a>
+          </div>
+          <div class="image">
+            <img src="images/apple-screenshot.png" alt="Apple Home Page" />
+          </div>
+          <p class="note">
+            Apple's home page uses very little text (except for some temporary
+            announcements on the landing page) and lots of white space with
+            large images on their pages. It make it easier for customers to
+            focus on the design of there products visually.
+          </p>
+        </div>
+      </section>
+
+      <!-- Card 3 -->
+      <section class="card-3">
+        <div class="card-header">
+          <h3>PARC: Repetition</h3>
+        </div>
+        <div class="card-content">
+          <div class="company">Tesla</div>
+          <div class="link">
+            <a href="https://www.tesla.com">https://www.tesla.com</a>
+          </div>
+          <div class="image">
+            <img src="images/tesla-screenshot.png" alt="Tesla Home Page" />
+          </div>
+          <p class="note">
+            On Tesla's home page repetition is used very effectively. The same
+            typography throughout. The navigation bar does not move when
+            scrolling. Images of the vehicles are all centered and have similar
+            quality, lighting, and background giving each a consistent look.
+          </p>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <div id="copyright">
-        &copy; <span></span> &diams; Robert R. Cox &diams; Ohio
+      <div>
+        &copy; <span id="copyright"></span> &diams; Robert R. Cox &diams;
+        <span>Last Updated: </span><span id="lastModified"></span>
       </div>
-      <div id="updated">Last Updated: <span id="lastModified"></span></div>
     </footer>
-    <script src="lesson2/js/lesson2.js"></script>
+
+    <script src="js/lesson2.js"></script>
   </body>
 </html>

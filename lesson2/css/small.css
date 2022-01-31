@@ -1,0 +1,73 @@
+body {
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #212121;
+}
+
+section {
+  width: 95%;
+  margin: 10px auto 30px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px 10px 0 0;
+  background-color: #efebe9;
+  border: 1px solid #424242;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.card-header {
+  max-width: 100%;
+  padding: 5px 0 10px 10px;
+  background-color: #424242;
+}
+
+h3 {
+  margin: 5px 10px 5px 0;
+  color: white;
+}
+
+.card-content {
+  margin: auto;
+  max-width: 96%;
+  height: auto;
+}
+
+.company {
+  margin: 10px 10px 10px 0;
+}
+
+.link {
+  margin: 0 10px 10px 0;
+}
+
+.image {
+  border: 1px solid #bdbdbd;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.note {
+  margin: 10px 0;
+}
+
+footer {
+  margin: 0 0 10px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  color: white;
+  background-color: #212121;
+}
