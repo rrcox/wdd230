@@ -1,0 +1,21 @@
+/*****************************************************************************/
+/* Media Queries for large views                                            */
+/*****************************************************************************/
+
+@media (min-width: 48em) {
+  body {
+    font-size: 1rem;
+  }
+
+  thead > tr:first-child {
+    font-size: 2.5rem;
+  }
+
+  thead > tr:nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  tbody {
+    font-size: 1.5rem;
+  }
+}
