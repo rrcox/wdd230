@@ -1,41 +1,49 @@
+html {
+  font-size: 80%;
+}
+
 body {
   font-family: "Ubuntu, sans-serif";
 }
 
 header {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
   margin: 20px;
-  padding: 20px 0 20px 0;
-  justify-items: center;
+  /* padding: 20px 0 20px 0; */
+  /* justify-items: center; */
+  padding: 20px;
   text-align: center;
   border-top: 1px solid black;
   box-shadow: 0 -5px 3px -3px black;
 }
 
 section {
-  width: 400px;
+  /* width: 400px; */
+  max-width: 90%;
   border: 1px solid darkgray;
   padding: 0 20px 20px 20px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   background-color: goldenrod;
 }
 section h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
 section p {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   margin: 5px;
 }
 
 section img {
+  max-width: 75%;
   border: 1px solid black;
   box-shadow: 5px 5px 8px gray;
 }
@@ -45,7 +53,11 @@ footer {
   margin: 30px 0 30px 0;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 44em) {
+  .html {
+    font-size: 100%;
+  }
+
   .cards {
     border: 1px solid black;
     box-shadow: 0 0 10px black;
