@@ -1,0 +1,53 @@
+body {
+  font-family: "Ubuntu, sans-serif";
+}
+
+header {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  margin: 20px;
+  padding: 20px 0 20px 0;
+  justify-items: center;
+  text-align: center;
+  border-top: 1px solid black;
+  box-shadow: 0 -5px 3px -3px black;
+}
+
+section {
+  width: 400px;
+  border: 1px solid darkgray;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 10px;
+  background-color: goldenrod;
+}
+section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1.3em;
+  margin: 5px;
+}
+
+section img {
+  border: 1px solid black;
+  box-shadow: 5px 5px 8px gray;
+}
+
+footer {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+@media (min-width: 60em) {
+  .cards {
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+  }
+}
