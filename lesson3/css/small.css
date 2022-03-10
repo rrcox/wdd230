@@ -116,6 +116,7 @@ main h3 {
 
 .main-home p {
   align-self: center;
+  margin-top: 5px;
   margin-bottom: 30px;
   margin-left: 10px;
 }
@@ -143,30 +144,22 @@ footer {
 }
 
 .main-target-audience h3 {
-  /* align-self: center; */
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 10px;
 }
 
 .main-target-audience p {
-  /* align-self: center; */
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 20px;
   margin-left: 10px;
 }
 
 .main-target-audience ul {
-  /* align-self: center; */
   margin-top: 5px;
   margin-bottom: 30px;
   margin-left: 30px;
 }
-
-/* p {
-  font-family: Roboto, sans-serif;
-  color: #0c4767;
-} */
 
 /*****************************************************************************/
 /* Color Scheme Page                                                         */
