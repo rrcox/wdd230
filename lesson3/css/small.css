@@ -51,10 +51,18 @@ header img {
   padding: 20px;
 }
 
+h3 {
+  font-size: 1.3rem;
+}
+
 p {
   font-family: Roboto, sans-serif;
   color: #0c4767;
-  padding: 0.5rem;
+}
+
+ul {
+  font-family: Roboto, sans-serif;
+  color: #0c4767;
 }
 
 nav {
@@ -94,6 +102,11 @@ main h2 {
   margin-left: 10px;
 }
 
+main h3 {
+  color: #fa7921ff;
+  margin-left: 10px;
+}
+
 .main-home div {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -129,10 +142,25 @@ footer {
   margin-left: 10px;
 }
 
-.main-target-audience p {
-  align-self: center;
-  margin-bottom: 30px;
+.main-target-audience h3 {
+  /* align-self: center; */
+  margin-top: 10px;
+  margin-bottom: 20px;
   margin-left: 10px;
+}
+
+.main-target-audience p {
+  /* align-self: center; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.main-target-audience ul {
+  /* align-self: center; */
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 /* p {
@@ -241,6 +269,19 @@ td {
   color: #fa7921;
   background-color: #ffffff;
   font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.heading-3-color {
+  color: #000000;
+  background-color: #fa7921;
+}
+
+.heading-3-sample {
+  color: #fa7921;
+  background-color: #ffffff;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
 }
