@@ -2,6 +2,7 @@
   /***************************************************************************/
   /* Header                                                                  */
   /***************************************************************************/
+
   header {
     display: grid;
     grid-template-columns: 75px 1fr 35px 35px 150px;
@@ -38,6 +39,7 @@
     grid-column: 1/4;
     grid-row: 1/2;
     margin: 10px 10px 0 10px;
+    max-height: 20rem;
   }
 
   main .news {
@@ -57,6 +59,26 @@
     grid-column: 1/4;
     grid-row: 4/5;
     margin: 10px 10px 0 10px;
+    text-align: center;
+  }
+
+  main .join .join-us-button {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px;
+    padding: 30px;
+    background-color: #fa7921;
+    border-radius: 10px;
+  }
+
+  main .join .join-us-button a {
+    color: white;
+  }
+
+  main .join p {
+    font-size: 1.8rem;
+    margin: 25px 10px 10px 10px;
+    color: white;
   }
 
   main .events {
@@ -76,10 +98,11 @@
     grid-template-columns: 1fr 1fr;
     min-height: 15rem;
     border: 1px solid #757575;
-    background-color: #eeeeee;
-    color: #757575;
     font-size: 1rem;
-    font-style: italic;
+  }
+
+  main .spotlights {
+    background-color: #fe9920;
   }
 
   main .spotlight1 {

@@ -9,8 +9,8 @@
 }
 
 body {
-  font-size: 1.2rem;
   font-family: Raleway, sans-serif;
+  font-size: 1.2rem;
 }
 
 header,
@@ -20,15 +20,42 @@ footer {
   margin: 0 auto;
 }
 
+body a {
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+}
+
+a:not(.nohover):hover {
+  color: #fa7921;
+}
+
 p {
   font-family: Roboto, sans-serif;
   color: #0c4767;
 }
 
-/* ul {
-  font-family: Roboto, sans-serif;
+nav {
+  display: none;
+}
+
+h2 {
+  color: #fa7921;
+  /* color: white; */
+}
+
+/*****************************************************************************/
+/* Banner                                                                    */
+/*****************************************************************************/
+
+#banner {
+  font-weight: bold;
+  color: white;
   color: #0c4767;
-} */
+  text-align: center;
+  padding-top: 15px;
+  min-height: 60px;
+  background-color: #fa7921;
+}
 
 /*****************************************************************************/
 /* Header                                                                    */
@@ -85,7 +112,7 @@ header h2 {
   margin-top: -22px;
   font-size: 1rem;
   padding-left: 1rem;
-  color: #fa7921ff;
+  color: #fa7921;
 }
 
 header #datetime {
@@ -111,14 +138,156 @@ main .hero,
 .weather,
 .news,
 .join {
-  min-height: 15rem;
   border: 1px solid #757575;
-  background-color: #eeeeee;
+  background-color: #0c4767;
   margin: 10px;
   padding: 10px;
-  color: #757575;
   font-size: 1rem;
-  font-style: italic;
+}
+
+main .hero {
+  overflow: hidden;
+  padding: 0;
+  max-height: 15rem;
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0c4767;
+}
+
+main .hero .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+main .hero .join-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fa7921;
+}
+
+main .hero .join-button a {
+  color: #0c4767;
+}
+
+main .events {
+  text-align: center;
+}
+
+main .events h3 {
+  margin: 10px;
+  color: #fe9920;
+}
+
+main .events p {
+  color: white;
+}
+
+main .events #more-info {
+  font-family: Roboto, sans-serif;
+  color: #fe9920;
+}
+
+/* main .weather {
+  max-height: rem;
+} */
+
+main .weather h2 {
+  color: #fa7921;
+  margin: 10px;
+  text-align: center;
+}
+
+main .weather-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75px 2rem 1fr 1fr 1fr;
+}
+
+main .weather figure {
+  justify-self: right;
+  align-self: center;
+}
+
+main .weather img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 75px;
+}
+
+main .weather .temp {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: 10px;
+  justify-self: left;
+  align-self: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+main .weather figcaption {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  justify-self: right;
+  font-size: 1.5rem;
+  color: white;
+}
+
+main .weather .weather-line {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  border-top: 1px solid white;
+}
+
+main .weather div {
+  color: white;
+}
+
+main .weather #wind-speed-label {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  justify-self: right;
+  font-size: 1rem;
+  color: white;
+}
+
+main .weather #wind-speed {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: white;
+}
+
+main .weather #wind-chill-label {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  justify-self: right;
+  font-size: 1rem;
+  color: white;
+}
+
+main .weather #wind-chill {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: white;
+}
+
+main .news h2 {
+  margin: 10px;
+  text-align: center;
+}
+main .news p {
+  color: white;
+  margin: 10px;
 }
 
 main .spotlights,
@@ -126,19 +295,43 @@ spotlight1,
 spotlight2 {
   min-height: 25rem;
   border: 1px solid #757575;
-  background-color: #eeeeee;
+  background-color: #0c4767;
   margin: 10px;
-  color: #757575;
   font-size: 1rem;
+}
+
+main .spotlights {
+  background-color: #fe9920;
+}
+
+main .spotlight {
+  min-height: 15rem;
+  background-color: #0c4767;
+  border: 1px solid #757575;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  text-align: center;
+}
+main .spotlight h2 {
+  margin-bottom: 10px;
+}
+
+main .spotlight img {
+  width: 75px;
+}
+
+main .spotlight .motto {
+  font-size: 1.4rem;
   font-style: italic;
 }
 
-main .spotlight1,
-.spotlight2 {
-  min-height: 15rem;
-  border: 1px solid #757575;
-  margin: 10px 10px 0 10px;
-  padding: 10px;
+main .spotlight .spotlight-line {
+  margin-top: 10px;
+  border-top: 1px solid white;
+}
+main .spotlight p {
+  margin-top: 10px;
+  color: white;
 }
 
 main .spotlight2 {

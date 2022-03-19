@@ -24,7 +24,7 @@
 
   header h1 {
     grid-column: 2/3;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding-left: 0.75rem;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -34,30 +34,14 @@
   header nav {
     grid-column: 3/4;
     grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    justify-items: left;
   }
 
-  header nav div #discover {
-    grid-column: 1/2;
-    margin-top: 20px;
-  }
-
-  header nav div #directory {
-    grid-column: 2/3;
-    margin-top: 20px;
-  }
-
-  header nav div #join {
-    grid-column: 3/4;
-    margin-top: 20px;
-  }
-
-  header nav div #contact {
-    grid-column: 4/5;
-    margin-top: 20px;
+  header a {
+    font-size: 1.2rem;
+    color: #0c4767ff;
   }
 
   header #link1 {
@@ -75,23 +59,13 @@
   header h2 {
     grid-column: 2/8;
     margin-top: -22px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-left: 1rem;
     color: #fa7921ff;
   }
 
-  header #datetime {
-    grid-column: 1/6;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    background-color: #0c4767ff;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-
-  header h3 {
-    font-size: 1.3rem;
+  header #menu {
+    display: none;
   }
 
   /***************************************************************************/
@@ -108,12 +82,14 @@
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 10px 0 0 30px;
+    text-align: center;
   }
 
   main .hero {
     grid-column: 2/4;
     grid-row: 1/3;
     margin: 10px 10px 0 10px;
+    max-height: 45rem;
   }
 
   main .spotlights {
@@ -133,6 +109,24 @@
     grid-column: 1/2;
     grid-row: 3/4;
     margin: 10px 0 20px 30px;
+    text-align: center;
+  }
+
+  main .join .join-us-button {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 30px;
+    background-color: #fa7921;
+    border-radius: 10px;
+  }
+  main .join .join-us-button a {
+    color: white;
+  }
+
+  main .join p {
+    font-size: 1rem;
+    margin: 25px 10px 10px 10px;
+    color: white;
   }
 
   main .news {
@@ -146,10 +140,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     border: 1px solid #757575;
-    background-color: #eeeeee;
-    color: #757575;
     font-size: 1rem;
-    font-style: italic;
+  }
+
+  main .spotlights {
+    background-color: #fe9920;
   }
 
   main .spotlight1 {
@@ -157,7 +152,7 @@
     grid-row: 1/2;
     min-height: 10rem;
     border: 1px solid #757575;
-    margin: 20px 20px 0 20px;
+    margin: 10px 10px 10px 10px;
     padding: 10px;
   }
 
@@ -165,7 +160,7 @@
     grid-column: 1/2;
     grid-row: 2/3;
     border: 1px solid #757575;
-    margin: 0 20px 0 20px;
+    margin: 0 10px 10px 10px;
     padding: 10px;
   }
 
@@ -174,9 +169,10 @@
     grid-column: 1/2;
     grid-row: 3/4;
     border: 1px solid #757575;
-    margin: 0 20px 20px 20px;
+    margin: 0 10px 10px 10px;
     padding: 10px;
   }
+
   /***************************************************************************/
   /* Footer                                                                  */
   /***************************************************************************/

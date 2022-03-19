@@ -22,6 +22,11 @@
   </head>
 
   <body>
+    <!-- Banner -->
+    <div id="banner">
+      Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
+
     <!-- Header -->
     <header>
       <div class="logo">
@@ -38,32 +43,104 @@
           ><img src="images/linkedin-logo.png" alt="LinkedIn link"
         /></a>
       </div>
-      <!-- <div id="menu">
+      <div id="menu">
         <img id="menu-img" src="images/menu.png" alt="Menu" />
-      </div> -->
+      </div>
       <h2>Chamber of Commerce</h2>
       <nav>
-        <!-- <div>Menu</div> -->
-        <div id="discover"><a href="#">Discover</a></div>
-        <div id="directory"><a href="#">Directory</a></div>
-        <div id="join"><a href="#">Join</a></div>
-        <div id="contact"><a href="#">Contact</a></div>
+        <div><a href="#">Discover</a></div>
+        <div><a href="#">Directory</a></div>
+        <div><a href="#">Join</a></div>
+        <div><a href="#">Contact</a></div>
       </nav>
       <div id="datetime"><span id="today"></span></div>
     </header>
 
+    <!-- Main -->
     <main>
       <div class="grid">
-        <div class="hero">Hero with site name and call to action</div>
-        <div class="events">Event</div>
-        <div class="weather">Weather</div>
-        <div class="news">News Release</div>
-        <div class="spotlights">
-          <div class="spotlight1">Spotlight 1</div>
-          <div class="spotlight2">Spotlight 2</div>
-          <div class="spotlight3">Spotlight 3</div>
+        <div class="hero">
+          <img src="images/hero.jpg" alt="Wayside Ohio" />
+          <div class="top-left">Welcome to Wayside</div>
+          <div class="join-button">
+            <a class="nohover" href="#">Join the Chamber</a>
+          </div>
         </div>
-        <div class="join">Join</div>
+
+        <div class="events">
+          <h2>Grand Opening</h2>
+          <h3>The Door Store</h3>
+          <p>
+            Join us for the grand opening of The Door Store, Friday at noon.
+            <a id="more-info" href="#">more info...</a>
+          </p>
+        </div>
+
+        <div class="weather">
+          <h2>Weather</h2>
+          <div class="weather-grid">
+            <figure>
+              <img src="" alt="" id="weathericon" />
+            </figure>
+            <div class="temp"><span id="current-temp"></span>&deg;F</div>
+            <figcaption></figcaption>
+            <div class="weather-line"></div>
+            <div id="wind-speed-label">Wind Speed:</div>
+            <div><span id="wind-speed"></span> mph</div>
+            <div id="wind-chill-label">Wind Chill:</div>
+            <div><span id="wind-chill"></span>&deg;F</div>
+          </div>
+        </div>
+
+        <div class="news">
+          <h2>News Release</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            non mi mattis, molestie nisi et, interdum arcu. Suspendisse potenti.
+            Praesent gravida vel felis in cursus. Etiam in massa facilisis,
+            tristique dui at, molestie elit. Morbi consequat ipsum risus, ut
+            pretium turpis commodo ac. Proin tortor velit, ultrices a egestas
+            ornare, suscipit et nisi. Fusce dictum eleifend commodo. Ut a ipsum
+            ex. Cras vitae augue nec dui maximus sagittis. Duis sem diam,
+            pulvinar ac nibh eget, dignissim finibus risus.
+          </p>
+        </div>
+
+        <div class="spotlights">
+          <div class="spotlight spotlight1">
+            <h2>The Idea Factory</h2>
+            <img src="images/lightbulb.svg" alt="lightbulb" />
+            <p class="motto">Let's build your idea!</p>
+            <div class="spotlight-line"></div>
+            <p>info@ideafactory.com</p>
+            <p>800-555-1212</p>
+          </div>
+          <div class="spotlight spotlight2">
+            <h2>Wayside Nature Conservancy</h2>
+            <img src="images/leaf.svg" alt="leaf" />
+            <p class="motto">Helping to preserve our natural wonders.</p>
+            <div class="spotlight-line"></div>
+            <p>donate@waysideconservancy.org</p>
+            <p>800-555-1212</p>
+          </div>
+          <div class="spotlight spotlight3">
+            <h2>Art Institute of Wayside</h2>
+            <img src="images/paintbrush.svg" alt="paintbrush" />
+            <p class="motto">Supporting community arts.</p>
+            <div class="spotlight-line"></div>
+            <p>contact@aiw.org</p>
+            <p>800-555-1212</p>
+          </div>
+        </div>
+        <div class="join">
+          <div class="join-us-button">
+            <a class="nohover" href="#">Join Us!</a>
+          </div>
+          <p>
+            Discover how to join the chamber of commerce and how it will benefit
+            your organization!
+          </p>
+        </div>
       </div>
     </main>
 
