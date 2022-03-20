@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Wayside Chamber" />
+    <title>Wayside Chamber</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+
+  <body>
+    <!-- Banner -->
+    <div id="banner">
+      Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="images/wayside-chamber-logo.svg" alt="Wayside Chamber Logo" />
+      </div>
+      <h1>Wayside</h1>
+      <div id="link1">
+        <a href="https://facebook.com" target="_blank"
+          ><img src="images/facebook-logo.png" alt="Facebook link"
+        /></a>
+      </div>
+      <div id="link2">
+        <a href="https://linkedin.com" target="_blank"
+          ><img src="images/linkedin-logo.png" alt="LinkedIn link"
+        /></a>
+      </div>
+      <div id="menu">
+        <img id="menu-img" src="images/menu.png" alt="Menu" />
+      </div>
+      <h2>Chamber of Commerce</h2>
+      <nav>
+        <div><a href="discover.html">Discover</a></div>
+        <div><a href="directory.html">Directory</a></div>
+        <div><a href="#">Join</a></div>
+        <div><a href="#">Contact</a></div>
+      </nav>
+      <div id="datetime"><span id="today"></span></div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="subheader">
+        <h2>Business Directory</h2>
+        <div id="grid-button">
+          <img src="images/grid.png" alt="grid" />
+        </div>
+        <div id="list-button">
+          <img src="images/list.png" alt="grid" />
+        </div>
+      </div>
+      <div id="display-mode" class="cards"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div id="top-line"></div>
+      <div class="logo">
+        <img
+          id="logo-img"
+          src="images/wayside-chamber-logo.svg"
+          alt="Wayside Chamber Logo"
+        />
+      </div>
+      <h1>Wayside</h1>
+      <h2>Chamber of Commerce</h2>
+      <address>
+        <p>1132 Main Street</p>
+        <p>Wayside, Ohio 45542</p>
+      </address>
+      <div id="info">
+        <p>info@waysidechamber.org</p>
+        <p>740-555-1212</p>
+        <div id="marker">
+          <img id="marker-img" src="images/map-marker.png" alt="Map marker" />
+          <p>Location Map</p>
+        </div>
+      </div>
+      <div id="bottom-line"></div>
+      <div id="subfooter">
+        <p>&copy;<span id="copyright"></span> Wayside Chamber</p>
+        <p>
+          <span class="divider"> | </span><strong>Rob Cox </strong>
+          <span class="divider"> | </span>
+        </p>
+        <p>WDD 230 Project <span class="last-divider"> | </span></p>
+        <div id="last-line">
+          <p>Last Modification: <span id="lastmod"></span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/directory.js"></script>
+  </body>
+</html>

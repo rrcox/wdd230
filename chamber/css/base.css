@@ -409,3 +409,134 @@ footer #top-line,
 .last-divider {
   display: none;
 }
+
+/***************************************************************************/
+/* Discover Page                                                           */
+/***************************************************************************/
+
+.page-container {
+  display: block;
+  /* grid-template-columns: 450px 1fr; */
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.image-card {
+  max-width: 100%;
+  border: 1px solid darkgray;
+  padding: 0 20px 20px 20px;
+  background-color: #0c4767;
+}
+
+.demographics h2 {
+  margin: 40px 20px 20px 20px;
+}
+
+.demographics p {
+  margin: 40px 20px 20px 20px;
+}
+
+/***************************************************************************/
+/* Directory Page                                                          */
+/***************************************************************************/
+
+main h2 {
+  margin-left: 10px;
+}
+
+main #grid-button img,
+#list-button img {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+main .subheader {
+  display: grid;
+  grid-template-columns: 400px 1fr 60px 60px;
+}
+
+main #grid-button {
+  grid-column: 3/4;
+}
+
+main #list-button {
+  grid-column: 4/5;
+}
+
+/***************************************************************************/
+/* Discover Page                                                           */
+/***************************************************************************/
+
+.image-list {
+  background-color: #0c4767;
+  color: white;
+}
+
+/***************************************************************************/
+/* Directory Page - Card Formats (card and list)                           */
+/***************************************************************************/
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.lists {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.list-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 100%;
+  border: 1px solid darkgray;
+  padding: 0 20px 20px 20px;
+  background-color: #0c4767;
+}
+
+.card-type {
+  max-width: 100%;
+  border: 1px solid darkgray;
+  padding: 0 20px 20px 20px;
+  background-color: #0c4767;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1rem;
+  color: white;
+  margin: 5px;
+}
+
+.card-logo-show {
+  margin-top: 10px;
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+.card-logo-hide {
+  display: none;
+}

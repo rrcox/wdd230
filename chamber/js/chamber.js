@@ -30,17 +30,13 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //  console.log(jsObject);
-    //  console.log(jsObject.main.temp);
-    document.querySelector("#current-temp").textContent = Math.round(
-      jsObject.main.temp
-    );
+    document.querySelector("#current-temp").textContent =
+      typeof jsObject.main.temp === "number"
+        ? Math.round(jsObject.main.temp)
+        : "N/A";
+
     const iconSrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description;
-    //  document.querySelector("#icon-src").textContent = iconsrc;
-    //  console.log("iconsrc:", iconSrc);
-    //  console.log("windspeed:", jsObject.wind.speed);
-    //  console.log("windchill:", jsObject.main.feels_like);
     const windSpeed =
       typeof jsObject.wind.speed === "number"
         ? Math.round(jsObject.wind.speed)
@@ -49,6 +45,7 @@ fetch(apiURL)
       typeof jsObject.main.feels_like === "number"
         ? Math.round(jsObject.main.feels_like)
         : "N/A";
+
     document.querySelector("#weathericon").setAttribute("src", iconSrc);
     document.querySelector("#weathericon").setAttribute("alt", desc);
     document.querySelector("figcaption").textContent = desc;
