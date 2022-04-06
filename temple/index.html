@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The Temple Inn & Suites" />
+    <title>Temple Inn & Suites</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="images/wayside-chamber-logo.svg"
+            alt="The Temple Inn & Suites Logo"
+          />
+        </a>
+      </div>
+      <h1>The Temple Inn & Suites</h1>
+      <div id="link1">
+        <a href="https://facebook.com" target="_blank"
+          ><img src="images/facebook-logo.png" alt="Facebook link"
+        /></a>
+      </div>
+      <div id="link2">
+        <a href="https://linkedin.com" target="_blank"
+          ><img src="images/linkedin-logo.png" alt="LinkedIn link"
+        /></a>
+      </div>
+      <div id="menu">
+        <img id="menu-img" src="images/menu.png" alt="Menu" />
+      </div>
+      <nav>
+        <div><a href="#">Information</a></div>
+        <div><a href="#">Reservations</a></div>
+        <div><a href="#">Services</a></div>
+      </nav>
+      <div id="datetime"><span id="today"></span></div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="grid">
+        <div class="hero">
+          <img src="images/hero.jpg" alt="Wayside Ohio" />
+          <div class="top-left">Welcome to Wayside</div>
+          <div class="join-button">
+            <a class="nohover" href="#">Join the Chamber</a>
+          </div>
+        </div>
+
+        <div class="events">
+          <h2>Grand Opening</h2>
+          <h3>The Door Store</h3>
+          <p>
+            Join us for the grand opening of The Door Store, Friday at noon.
+            <a id="more-info" href="#">more info...</a>
+          </p>
+        </div>
+
+        <div class="weather">
+          <h2>Weather</h2>
+          <div class="weather-grid">
+            <figure>
+              <img src="" alt="" id="weathericon" />
+            </figure>
+            <div class="temp"><span id="current-temp"></span>&deg;F</div>
+            <figcaption></figcaption>
+            <div class="weather-line"></div>
+            <div id="wind-speed-label">Wind Speed:</div>
+            <div><span id="wind-speed"></span> mph</div>
+            <div id="wind-chill-label">Wind Chill:</div>
+            <div><span id="wind-chill"></span>&deg;F</div>
+          </div>
+        </div>
+
+        <div class="news">
+          <h2>News Release</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            non mi mattis, molestie nisi et, interdum arcu. Suspendisse potenti.
+            Praesent gravida vel felis in cursus. Etiam in massa facilisis,
+            tristique dui at, molestie elit. Morbi consequat ipsum risus, ut
+            pretium turpis commodo ac. Proin tortor velit, ultrices a egestas
+            ornare, suscipit et nisi. Fusce dictum eleifend commodo. Ut a ipsum
+            ex. Cras vitae augue nec dui maximus sagittis. Duis sem diam,
+            pulvinar ac nibh eget, dignissim finibus risus.
+          </p>
+        </div>
+
+        <div class="spotlights">
+          <div class="spotlight spotlight1">
+            <h2>The Idea Factory</h2>
+            <img src="images/lightbulb.svg" alt="lightbulb" />
+            <p class="motto">Let's build your idea!</p>
+            <div class="spotlight-line"></div>
+            <p>info@ideafactory.com</p>
+            <p>800-555-1212</p>
+          </div>
+          <div class="spotlight spotlight2">
+            <h2>Wayside Nature Conservancy</h2>
+            <img src="images/leaf.svg" alt="leaf" />
+            <p class="motto">Helping to preserve our natural wonders.</p>
+            <div class="spotlight-line"></div>
+            <p>donate@waysideconservancy.org</p>
+            <p>800-555-1212</p>
+          </div>
+          <div class="spotlight spotlight3">
+            <h2>Art Institute of Wayside</h2>
+            <img src="images/paintbrush.svg" alt="paintbrush" />
+            <p class="motto">Supporting community arts.</p>
+            <div class="spotlight-line"></div>
+            <p>contact@aiw.org</p>
+            <p>800-555-1212</p>
+          </div>
+        </div>
+        <div class="join">
+          <div class="join-us-button">
+            <a class="nohover" href="#">Join Us!</a>
+          </div>
+          <p>
+            Discover how to join the chamber of commerce and how it will benefit
+            your organization!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div id="top-line"></div>
+      <div class="logo">
+        <img
+          id="logo-img"
+          src="images/wayside-chamber-logo.svg"
+          alt="Wayside Chamber Logo"
+        />
+      </div>
+      <h1>The Temple Inn & Suites</h1>
+      <address>
+        <p>1234 Main Street</p>
+        <p>Bethesda, MD 45542</p>
+      </address>
+      <div id="info">
+        <p>info@templeinn.com</p>
+        <p>740-555-1212</p>
+        <div id="marker">
+          <img id="marker-img" src="images/map-marker.png" alt="Map marker" />
+          <p>Location Map</p>
+        </div>
+      </div>
+      <div id="bottom-line"></div>
+      <div id="subfooter">
+        <p>&copy;<span id="copyright"></span> The Temple Inn & Suites</p>
+        <p>
+          <span class="divider"> | </span><strong>Rob Cox </strong>
+          <span class="divider"> | </span>
+        </p>
+        <div id="last-line">
+          <p>Last Modification: <span id="lastmod"></span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/chamber.js"></script>
+  </body>
+</html>
