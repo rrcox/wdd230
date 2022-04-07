@@ -1,40 +1,40 @@
 {
   "temples": [
     {
-      "name": "Temple 1",
+      "name": "Mesa AZ",
       "address": "1234 Main St, Portsmouth, OH 45662",
       "phone": "800-555-1212",
-      "url": "https://company1.com"
+      "img": "images/mesa.jpg"
     },
     {
-      "name": "Temple 2",
+      "name": "Chicago IL",
       "address": "1234 Main St, Portsmouth, OH 45662",
       "phone": "800-555-1212",
-      "url": "https://company1.com"
+      "img": "images/chicago.jpg"
     },
     {
-      "name": "Temple 3",
+      "name": "Salt Lake UT",
       "address": "1234 Main St, Portsmouth, OH 45662",
       "phone": "800-555-1212",
-      "url": "https://company1.com"
+      "img": "images/salt-lake.png"
     },
     {
-      "name": "Temple 4",
+      "name": "Oakland CA",
       "address": "1234 Main St, Portsmouth, OH 45662",
       "phone": "800-555-1212",
-      "url": "https://company1.com"
+      "img": "images/oakland.jpg"
     },
     {
-      "name": "Temple 5",
+      "name": "Seattle WA",
       "address": "1234 Main St, Portsmouth, OH 45662",
       "phone": "800-555-1212",
-      "url": "https://company1.com"
+      "img": "images/seattle.jpg"
     },
     {
-      "name": "Temple 6",
+      "name": "Washington DC",
       "address": "1234 Main St, Portsmouth, OH 45662",
       "phone": "800-555-1212",
-      "url": "https://company1.com"
+      "img": "images/hero.jpg"
     }
   ]
 }

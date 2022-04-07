@@ -71,7 +71,8 @@ function displayCards(member, index) {
   let button = document.createElement("button");
 
   card.classList.add("card-type");
-  let logoUrl = `https://picsum.photos/200/100.webp?random=${index + 1}`;
+  //   let logoUrl = `https://picsum.photos/200/100.webp?random=${index + 1}`;
+  let logoUrl = member.img;
 
   logo.classList.add("card-logo-show");
   logo.setAttribute("src", logoUrl);

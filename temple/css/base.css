@@ -439,13 +439,16 @@ main .subheader {
   grid-template-columns: 400px 1fr 60px 60px;
 }
 
-main #grid-button {
+.card-logo-show {
+  max-height: 148px;
+}
+/* main #grid-button {
   grid-column: 3/4;
 }
 
 main #list-button {
   grid-column: 4/5;
-}
+} */
 
 /***************************************************************************/
 /* Reservations Page                                                       */
