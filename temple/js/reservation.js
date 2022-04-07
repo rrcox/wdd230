@@ -18,7 +18,7 @@ document.getElementById("copyright").textContent = copyrightYear;
 const lastMod = document.lastModified;
 document.getElementById("lastmod").textContent = lastMod;
 
-// Add event listener to grid and list buttons
+// // Add event listener to grid and list buttons
 // const listButton = document.getElementById("list-button");
 // const gridButton = document.getElementById("grid-button");
 
@@ -33,16 +33,16 @@ const day = date.getDay();
 banner.hidden = ![1, 2].includes(day);
 
 // Load temple directory
-const cards = document.querySelector(".cards");
-loadData();
+// const cards = document.querySelector(".cards");
+// loadData();
 
-document.addEventListener("click", (e) => {
-  if (e.target && e.target.id.includes("btn")) {
-    if (e.target.classList.contains("active")) {
-      e.target.classList.remove("active");
-    } else e.target.classList.add("active");
-  }
-});
+// document.addEventListener("click", (e) => {
+//   if (e.target && e.target.id.includes("btn")) {
+//     if (e.target.classList.contains("active")) {
+//       e.target.classList.remove("active");
+//     } else e.target.classList.add("active");
+//   }
+// });
 
 //-----------------------------------------------------------------------------
 
@@ -78,6 +78,7 @@ function displayCards(member, index) {
   logo.setAttribute("alt", `logo of ${member.name}`);
   logo.setAttribute("loading", "lazy");
 
+  //   button.classList.add("active");
   button.textContent = "\u2764";
   button.id = "btn" + index;
 
@@ -98,44 +99,44 @@ function displayCards(member, index) {
 
 //-----------------------------------------------------------------------------
 
-// function switchToList() {
-//   const cards = document.getElementById("display-mode");
-//   cards.classList.remove("cards");
-//   cards.classList.add("lists");
+function switchToList() {
+  const cards = document.getElementById("display-mode");
+  cards.classList.remove("cards");
+  cards.classList.add("lists");
 
-//   const imageCollection = document.getElementsByClassName("card-logo-show");
-//   const images = Array.from(imageCollection);
-//   images.forEach((image) => {
-//     image.classList.remove("card-logo-show");
-//     image.classList.add("card-logo-hide");
-//   });
+  const imageCollection = document.getElementsByClassName("card-logo-show");
+  const images = Array.from(imageCollection);
+  images.forEach((image) => {
+    image.classList.remove("card-logo-show");
+    image.classList.add("card-logo-hide");
+  });
 
-//   const sectionCollection = document.getElementsByClassName("card-type");
-//   const sections = Array.from(sectionCollection);
-//   sections.forEach((section) => {
-//     section.classList.remove("card-type");
-//     section.classList.add("list-type");
-//   });
-// }
+  const sectionCollection = document.getElementsByClassName("card-type");
+  const sections = Array.from(sectionCollection);
+  sections.forEach((section) => {
+    section.classList.remove("card-type");
+    section.classList.add("list-type");
+  });
+}
 
-// //-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
-// function switchToGrid() {
-//   const cards = document.getElementById("display-mode");
-//   cards.classList.remove("lists");
-//   cards.classList.add("cards");
+function switchToGrid() {
+  const cards = document.getElementById("display-mode");
+  cards.classList.remove("lists");
+  cards.classList.add("cards");
 
-//   const imageCollection = document.getElementsByClassName("card-logo-hide");
-//   const images = Array.from(imageCollection);
-//   images.forEach((image) => {
-//     image.classList.remove("card-logo-hide");
-//     image.classList.add("card-logo-show");
-//   });
+  const imageCollection = document.getElementsByClassName("card-logo-hide");
+  const images = Array.from(imageCollection);
+  images.forEach((image) => {
+    image.classList.remove("card-logo-hide");
+    image.classList.add("card-logo-show");
+  });
 
-//   const sectionCollection = document.getElementsByClassName("list-type");
-//   const sections = Array.from(sectionCollection);
-//   sections.forEach((section) => {
-//     section.classList.remove("list-type");
-//     section.classList.add("card-type");
-//   });
-// }
+  const sectionCollection = document.getElementsByClassName("list-type");
+  const sections = Array.from(sectionCollection);
+  sections.forEach((section) => {
+    section.classList.remove("list-type");
+    section.classList.add("card-type");
+  });
+}

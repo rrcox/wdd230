@@ -1,0 +1,772 @@
+/*****************************************************************************/
+/* Common                                                                    */
+/*****************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Playfair, serif;
+  font-size: 1.2rem;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 0 auto;
+}
+
+body a {
+  text-decoration: none;
+}
+
+a:not(.nohover):hover {
+  color: #fa7921;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  color: #0c4767;
+}
+
+nav {
+  display: none;
+}
+
+h2 {
+  color: #fa7921;
+  /* color: white; */
+}
+
+/*****************************************************************************/
+/* Header                                                                    */
+/*****************************************************************************/
+
+header {
+  display: grid;
+  grid-template-columns: 75px 1fr 35px 35px 60px;
+  grid-template-rows: 40px 40px 1fr;
+  text-align: left;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+header .logo {
+  grid-row: 1/3;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  padding-left: 0.75rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #0c4767ff;
+}
+
+header #link1 {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+header #link2 {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+header #menu {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+header #menu-img {
+  width: 35px;
+}
+
+header h2 {
+  grid-column: 2/6;
+  margin-top: -22px;
+  font-size: 1rem;
+  padding-left: 1rem;
+  color: #fa7921;
+}
+
+header #datetime {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  grid-column: 1/6;
+  background-color: #0c4767ff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+header h3 {
+  font-size: 1.3rem;
+}
+
+/*****************************************************************************/
+/* Main                                                                      */
+/*****************************************************************************/
+
+/*****************************************************************************/
+/* Main - Hero                                                               */
+/*****************************************************************************/
+
+main .hero,
+.weather {
+  border: 1px solid #757575;
+  background-color: #0c4767;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+main .hero {
+  overflow: hidden;
+  padding: 0;
+  max-height: 15rem;
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0c4767;
+}
+
+main .hero .top-left {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+main .hero .join-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fa7921;
+}
+
+main .hero .join-button a {
+  color: #0c4767;
+}
+
+/***************************************************************************/
+/* Main - Carousel                                                         */
+/***************************************************************************/
+
+.carousel {
+  grid-column: 1/3;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  width: 0;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  background: darkslategray;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid darkslategray;
+  border-radius: 50%;
+  margin: 0 0.75rem 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/***************************************************************************/
+/* Main - Weather                                                          */
+/***************************************************************************/
+
+main .weather h2 {
+  color: #fa7921;
+  margin: 10px;
+  text-align: center;
+}
+
+main .weather-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75px 2rem 1fr 1fr 1fr;
+}
+
+main .weather figure {
+  justify-self: right;
+  align-self: center;
+}
+
+main .weather img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 75px;
+}
+
+main .weather .temp {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: 10px;
+  justify-self: left;
+  align-self: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+main .weather figcaption {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  justify-self: right;
+  font-size: 1.5rem;
+  color: white;
+}
+
+main .weather .weather-line {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  border-top: 1px solid white;
+}
+
+main .weather div {
+  color: white;
+}
+
+main .weather #wind-speed-label {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  justify-self: right;
+  font-size: 1rem;
+  color: white;
+}
+
+main .weather #wind-speed {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: white;
+}
+
+main .weather #wind-chill-label {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  justify-self: right;
+  font-size: 1rem;
+  color: white;
+}
+
+main .weather #wind-chill {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: white;
+}
+
+/*****************************************************************************/
+/* Footer                                                                    */
+/*****************************************************************************/
+
+footer {
+  display: block;
+  text-align: center;
+}
+
+footer #logo-img {
+  width: 125px;
+}
+
+footer #marker {
+  display: block;
+}
+
+footer #marker-img {
+  display: inline-block;
+  margin-top: 15px;
+  width: 35px;
+}
+
+footer h1 {
+  font-size: 1.6rem;
+  padding-left: 0.75rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #0c4767ff;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding-left: 1rem;
+  color: #fa7921ff;
+}
+
+footer address {
+  margin-bottom: 10px;
+}
+
+footer #subfooter {
+  font-size: 0.9rem;
+}
+
+footer #subfooter p {
+  margin-bottom: 0.2rem;
+}
+
+footer #top-line,
+#bottom-line {
+  border-top: 1px solid #0c4767ff;
+  margin: 10px;
+}
+
+.divider {
+  display: none;
+}
+
+.last-divider {
+  display: none;
+}
+
+/***************************************************************************/
+/* Discover Page                                                           */
+/***************************************************************************/
+
+.page-container {
+  display: block;
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.image-card {
+  max-width: 100%;
+  border: 1px solid darkgray;
+  padding: 0 20px 20px 20px;
+  background-color: #0c4767;
+}
+
+.demographics h2 {
+  margin: 40px 20px 20px 20px;
+}
+
+.demographics p {
+  margin: 40px 20px 20px 20px;
+}
+
+/***************************************************************************/
+/* Temple Information Page                                                 */
+/***************************************************************************/
+
+main h2 {
+  margin-left: 10px;
+}
+
+main #grid-button img,
+#list-button img {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+main .subheader {
+  display: grid;
+  grid-template-columns: 400px 1fr 60px 60px;
+}
+
+main #grid-button {
+  grid-column: 3/4;
+}
+
+main #list-button {
+  grid-column: 4/5;
+}
+
+/***************************************************************************/
+/* Reservations Page                                                       */
+/***************************************************************************/
+
+#reservation-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#reservation-grid h2 {
+  margin-bottom: 2rem;
+  /* align-items: center; */
+}
+form {
+  font: 1rem Roboto, sans-serif;
+  grid-row: 2/3;
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  margin-bottom: 5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 1.75rem;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 250px;
+  text-align: ceneter;
+}
+
+input,
+select,
+textarea {
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  margin: 0 auto;
+  padding: 0.25rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+input {
+  padding: 0.5rem;
+}
+textarea {
+  vertical-align: top;
+  height: 5rem;
+}
+
+#reservation_form button {
+  width: 300px;
+  padding: 1rem;
+  border: 1px solid #777;
+  border-radius: 0.5rem;
+}
+
+/***************************************************************************/
+/* Services Page                                                           */
+/***************************************************************************/
+
+#service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#service-links {
+  margin-bottom: 2rem;
+  /* align-items: center; */
+}
+
+#service-links h3 {
+  margin-left: 1.5rem;
+}
+
+form {
+  font: 1rem Roboto, sans-serif;
+  grid-row: 2/3;
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  margin-bottom: 5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 1.75rem;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 250px;
+  text-align: ceneter;
+}
+
+input,
+select,
+textarea {
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  margin: 0 auto;
+  padding: 0.25rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+input {
+  padding: 0.5rem;
+}
+textarea {
+  vertical-align: top;
+  height: 5rem;
+}
+
+#reservation_form button {
+  width: 300px;
+  padding: 1rem;
+  border: 1px solid #777;
+  border-radius: 0.5rem;
+}
+
+/***************************************************************************/
+/* Missionary Services Page                                                */
+/***************************************************************************/
+
+#service-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 4rem 4rem 1fr 1fr;
+  margin-left: 1rem;
+}
+
+#missionary-hdr {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 1rem;
+}
+
+#missionary-intro {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+#missionary-img1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#missionary-desc1 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-right: 10rem;
+}
+
+#missionary-img2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#missionary-desc2 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+#service-grid img {
+  margin: 1rem;
+}
+
+#service-grid p {
+  margin: 1rem;
+}
+
+#contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contact-grid h2 {
+  margin-bottom: 2rem;
+}
+
+#contact-grid p {
+  margin: 2rem;
+}
+
+form {
+  grid-column: 1/3;
+  font: 1rem Roboto, sans-serif;
+  grid-row: 2/3;
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  margin-bottom: 5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 1.75rem;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 250px;
+  text-align: ceneter;
+}
+
+input {
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  margin: 0 auto;
+  padding: 0.25rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+input {
+  padding: 0.5rem;
+}
+textarea {
+  vertical-align: top;
+  height: 5rem;
+}
+
+#contact-form button {
+  width: 300px;
+  padding: 1rem;
+  border: 1px solid #777;
+  border-radius: 0.5rem;
+}
+
+/***************************************************************************/
+/* Temple Information Page                                                 */
+/***************************************************************************/
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.lists {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.list-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 100%;
+  border: 1px solid darkgray;
+  padding: 0 20px 20px 20px;
+  background-color: #0c4767;
+}
+
+.card-type {
+  max-width: 100%;
+  border: 1px solid darkgray;
+  padding: 0 20px 20px 20px;
+  background-color: #0c4767;
+  border-radius: 0.75rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1rem;
+  color: white;
+  margin: 5px;
+}
+
+.card-logo-show {
+  margin-top: 10px;
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+.card-logo-hide {
+  display: none;
+}
+
+.cards button.active {
+  color: red;
+}

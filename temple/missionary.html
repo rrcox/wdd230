@@ -22,6 +22,9 @@
   </head>
 
   <body>
+    <!-- Banner -->
+    <div id="banner">Weather Alert Information</div>
+
     <!-- Header -->
     <header>
       <div class="logo">
@@ -56,45 +59,69 @@
 
     <!-- Main -->
     <main>
-      <div class="grid">
-        <div class="hero">
-          <img src="images/hero.jpg" alt="Temple Inn & Suites" />
-          <div class="top-left">The Temple Inn & Suites Welcomes You</div>
-          <div class="join-button">
-            <a class="nohover" href="#">Stay with Us</a>
-          </div>
+      <div id="service-grid">
+        <div id="service-links">
+          <h2 id="missionary-hdr">Missionary Services</h2>
         </div>
-
-        <div class="carousel">
-          <div class="slider">
-            <div class="slides">
-              <div id="slide-1">1</div>
-              <div id="slide-2"><img src="images/leaf.svg" , alt="img" /></div>
-              <div id="slide-3">3</div>
-              <div id="slide-4">4</div>
-            </div>
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-          </div>
-        </div>
-
-        <div class="weather">
-          <h2>Weather</h2>
-          <div class="weather-grid">
-            <figure>
-              <img src="" alt="" id="weathericon" />
-            </figure>
-            <div class="temp"><span id="current-temp"></span>&deg;F</div>
-            <figcaption></figcaption>
-            <div class="weather-line"></div>
-            <div id="wind-speed-label">Wind Speed:</div>
-            <div><span id="wind-speed"></span> mph</div>
-            <div id="wind-chill-label">Wind Chill:</div>
-            <div><span id="wind-chill"></span>&deg;F</div>
-          </div>
-        </div>
+        <p id="missionary-intro">
+          We have a variety of wonderful accommodations for our missionaries:
+        </p>
+        <img
+          id="missionary-img1"
+          src="https://picsum.photos/300/300?random=1"
+          alt="accommodations"
+        />
+        <img />
+        <p id="missionary-desc1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar
+          elementum integer enim neque volutpat ac tincidunt vitae. Feugiat in
+          ante metus dictum. Velit ut tortor pretium viverra suspendisse potenti
+          nullam ac tortor. Et malesuada fames ac turpis. Enim diam vulputate ut
+          pharetra sit. Magna eget est lorem ipsum. Felis eget nunc lobortis
+          mattis. Bibendum enim facilisis gravida neque convallis a cras.
+          Elementum sagittis vitae et leo duis ut diam quam.
+        </p>
+        <img
+          id="missionary-img2"
+          src="https://picsum.photos/300/300?random=2"
+          alt="accommodations"
+        />
+        <img />
+        <p id="missionary-desc2">
+          Leo vel fringilla est ullamcorper eget nulla facilisi etiam. Vel
+          facilisis volutpat est velit. Augue eget arcu dictum varius duis at
+          consectetur lorem donec. Arcu felis bibendum ut tristique et egestas.
+          Fermentum dui faucibus in ornare. Donec adipiscing tristique risus nec
+          feugiat. Tortor dignissim convallis aenean et tortor at risus. At
+          tellus at urna condimentum mattis pellentesque id. Turpis nunc eget
+          lorem dolor sed viverra. Dolor sit amet consectetur adipiscing elit
+          pellentesque habitant morbi tristique. Lacus sed turpis tincidunt id
+          aliquet risus feugiat in ante. Duis ultricies lacus sed turpis
+          tincidunt id.
+        </p>
+      </div>
+      <div id="contact-grid">
+        <p>Please contact us with any questions:</p>
+        <form action="missionary.html" id="contact-form" method="post">
+          <ul>
+            <li>
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">Your Email:</label>
+              <input type="email" id="mail" name="user_email" />
+            </li>
+            <li>
+              <label for="phone">Your Phone:</label>
+              <input type="text" id="phone" name="user_phone" />
+            </li>
+            <li>
+              <button type="button">Let Us Contact You</button>
+            </li>
+          </ul>
+        </form>
       </div>
     </main>
 
@@ -137,6 +164,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/service.js"></script>
   </body>
 </html>

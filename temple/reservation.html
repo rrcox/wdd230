@@ -22,6 +22,9 @@
   </head>
 
   <body>
+    <!-- Banner -->
+    <div id="banner">Weather Alert Information</div>
+
     <!-- Header -->
     <header>
       <div class="logo">
@@ -48,7 +51,7 @@
       </div>
       <nav>
         <div><a href="temple.html">Temple Information</a></div>
-        <div><a href="reservation.html">Reservations</a></div>
+        <div><a href="#">Reservations</a></div>
         <div><a href="service.html">Services</a></div>
       </nav>
       <div id="datetime"><span id="today"></span></div>
@@ -56,45 +59,72 @@
 
     <!-- Main -->
     <main>
-      <div class="grid">
-        <div class="hero">
-          <img src="images/hero.jpg" alt="Temple Inn & Suites" />
-          <div class="top-left">The Temple Inn & Suites Welcomes You</div>
-          <div class="join-button">
-            <a class="nohover" href="#">Stay with Us</a>
-          </div>
-        </div>
-
-        <div class="carousel">
-          <div class="slider">
-            <div class="slides">
-              <div id="slide-1">1</div>
-              <div id="slide-2"><img src="images/leaf.svg" , alt="img" /></div>
-              <div id="slide-3">3</div>
-              <div id="slide-4">4</div>
-            </div>
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-          </div>
-        </div>
-
-        <div class="weather">
-          <h2>Weather</h2>
-          <div class="weather-grid">
-            <figure>
-              <img src="" alt="" id="weathericon" />
-            </figure>
-            <div class="temp"><span id="current-temp"></span>&deg;F</div>
-            <figcaption></figcaption>
-            <div class="weather-line"></div>
-            <div id="wind-speed-label">Wind Speed:</div>
-            <div><span id="wind-speed"></span> mph</div>
-            <div id="wind-chill-label">Wind Chill:</div>
-            <div><span id="wind-chill"></span>&deg;F</div>
-          </div>
-        </div>
+      <div id="reservation-grid">
+        <h2>Reservations</h2>
+        <form action="reservation.html" id="reservation_form" method="post">
+          <ul>
+            <li>
+              <label for="location">Location:</label>
+              <select
+                id="location"
+                name="location_list"
+                form="reservation_form"
+              >
+                <option value="washington_dc">Washington D.C.</option>
+                <option value="salt_lake">Salt Lake City</option>
+                <option value="mesa">Mesa</option>
+                <option value="oakland">Oakland</option>
+                <option value="seattle">Seattle</option>
+                <option value="chicago">Chicago</option>
+              </select>
+            </li>
+            <li>
+              <label for="room_type">Location:</label>
+              <select id="room_type" name="room_type" form="reservation_form">
+                <option value="king_suite">King Suite</option>
+                <option value="queen_suite">Queen Suite</option>
+                <option value="king_room">King Room</option>
+                <option value="queen_room">Queen Room</option>
+                <option value="double_room">Double Room</option>
+              </select>
+            </li>
+            <li>
+              <label for="room_count">Number of Rooms:</label>
+              <input type="number" id="room_count" name="user_number" />
+            </li>
+            <li>
+              <label for="from_date">From Date:</label>
+              <input type="date" id="from_date" name="user_from_date" />
+            </li>
+            <li>
+              <label for="to_date">To Date:</label>
+              <input type="date" id="to_date" name="user_to_date" />
+            </li>
+            <li>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" />
+            </li>
+            <li>
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" name="user_phone" />
+            </li>
+            <li>
+              <label for="home">Home State/Country:</label>
+              <input type="text" id="home" name="user_home" />
+            </li>
+            <li>
+              <label for="comment">Comments/Special Requests:</label>
+              <textarea id="msg" name="user_comment"></textarea>
+            </li>
+            <li>
+              <button type="button">Reserve Your Room</button>
+            </li>
+          </ul>
+        </form>
       </div>
     </main>
 
@@ -137,6 +167,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/reservation.js"></script>
   </body>
 </html>

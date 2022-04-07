@@ -1,0 +1,40 @@
+{
+  "temples": [
+    {
+      "name": "Temple 1",
+      "address": "1234 Main St, Portsmouth, OH 45662",
+      "phone": "800-555-1212",
+      "url": "https://company1.com"
+    },
+    {
+      "name": "Temple 2",
+      "address": "1234 Main St, Portsmouth, OH 45662",
+      "phone": "800-555-1212",
+      "url": "https://company1.com"
+    },
+    {
+      "name": "Temple 3",
+      "address": "1234 Main St, Portsmouth, OH 45662",
+      "phone": "800-555-1212",
+      "url": "https://company1.com"
+    },
+    {
+      "name": "Temple 4",
+      "address": "1234 Main St, Portsmouth, OH 45662",
+      "phone": "800-555-1212",
+      "url": "https://company1.com"
+    },
+    {
+      "name": "Temple 5",
+      "address": "1234 Main St, Portsmouth, OH 45662",
+      "phone": "800-555-1212",
+      "url": "https://company1.com"
+    },
+    {
+      "name": "Temple 6",
+      "address": "1234 Main St, Portsmouth, OH 45662",
+      "phone": "800-555-1212",
+      "url": "https://company1.com"
+    }
+  ]
+}
